@@ -90,7 +90,7 @@ describe('PropertyBase', function () {
             this.value = value;
         };
 
-        util.lodash.inherit(FakeType, sdk.PropertyBase);
+        util.lodash.inherit(FakeType, new sdk.PropertyBase());
 
         beforeEach(function () {
             gggp = new FakeType('great-great-grandparent');
